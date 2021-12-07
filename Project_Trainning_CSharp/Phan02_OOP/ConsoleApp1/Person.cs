@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectOOP
 {
-  public  class Person
+  public  class Person:IComparable
     {
 
         string iD;
@@ -21,6 +21,10 @@ namespace ProjectOOP
 
         public virtual void NhapThongTinPerson()
         {
+            //MyString myString = new MyString();
+            //myString.Display();
+         
+
             Console.WriteLine("Nhap MSSV: ");
             iD = Console.ReadLine();
             Console.WriteLine("Nhap Ten: ");
@@ -34,13 +38,54 @@ namespace ProjectOOP
         {
             return string.Format("ID: {0} - fullName: {1} - Age: {2} - address: {3}", ID, fullName, age, address);
         }
+
+        public override bool Equals(object obj)
+        {
+            return this.iD.Equals(((Person)obj).ID);
+        }
+        public int CompareTo(object obj)
+        {
+            if(obj is Person)
+                return this.ID.CompareTo(((Person)obj).ID);
+            return -1;
+        }
+
         public Person()
         {
 
         }
         public Person(string iD,string fullName,int age, string address)
         {
-            this.iD = iD;this.fullName = fullName;this.address=address,this.age = age;
+            this.iD = iD;this.fullName = fullName;this.address = address; this.age = age;
         }
+        ////a, b. parameter
+        //Person person;//global trong class person
+        //public int Add(int a,int b)
+        //{
+        //    person = new Person();
+        //    int c = a + b;
+        //    return c;
+        //}
+        //public void Display()
+        //{
+        //    if(person!=null)
+        //    {
+        //        Person person;
+        //        int j = 0;
+        //        for (int i = 0; i < 8; i++)
+        //        {
+        //             j = 8;
+        //            person = new Person();
+
+        //        }
+        //        Console.Write(j);
+        //    }
+        //    else
+        //    {
+        //        Console.Write(j);
+        //    }
+        //}
+        
+        
     }
 }

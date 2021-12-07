@@ -11,55 +11,16 @@ namespace ProjectOOP
     {
         static void Main(string[] args)
         {
-            //mô hình hóa: class, object
-            // kế thừa , Đa hình
-            // tính đóng gói
-            // dùng lại
-            SinhVien sv;
-            sv= new SinhVien();
-            //sv.MaSinhVien = "2";
-            //sv.TenSinhVien = "Nguyen Thi B";
-            //sv.TuoiSinhVien = 23;
-            //sv.DiaChi = "binh Duong";
+            string inputstring = "Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme. Save time in Word with new buttons that show up where you need them.To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign. Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.";
 
-            //SinhVien svc = new SinhVien()
-            //{
-            //    MaSinhVien = "4",
-            //    TenSinhVien = "Nguyen Van D",
-            //    TuoiSinhVien = 54,
-            //    DiaChi="Vung Tau"
-            //};
-
-            sv.NhapThongTinPerson();
-          
-            List<int> vs = new List<int>();
-            ArrayList arrayList = new ArrayList();
-            string[] vs1 = new string[]
+        Hashtable hashtable = MyLibrary.MyString.TinhTanSuatTu(inputstring);
+            string n = MyLibrary.MyString.Proper("Nguyen minh phuc");
+            Console.WriteLine(n);
+            foreach (var item in hashtable.Keys)
             {
-                "vs1","vs2"
-            };
-
-
-            NhanVien nv = new NhanVien();
-            nv.NhapThongTinPerson();
-            //SinhVien sva = new SinhVien("1", "Nguyen Van A", 34, "Dong Nai");
-            //SinhVien svb = new SinhVien("2");
-
-            //SinhVien svd = new SinhVien(svb);
-
-            List<NhanVien> nhanViens = new List<NhanVien>();
-            List<SinhVien> sinhViens = new List<SinhVien>();
-
-            List<Person> people = new List<Person>();
-            NhanVien nhanVien = new NhanVien();
-            people.Add(nhanVien);
-            SinhVien sinhVien = new SinhVien();
-            people.Add(sinhVien);
-
-            foreach (var item in people)
-            {
-                item.NhapThongTinPerson();
+                Console.WriteLine(string.Format("{0}: {1}", item, hashtable[item]));
             }
+            Console.ReadLine();
 
         }
     }

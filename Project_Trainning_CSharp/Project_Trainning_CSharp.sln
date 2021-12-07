@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Phan02_OOP", "Phan02_OOP", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectOOP", "Phan02_OOP\ConsoleApp1\ProjectOOP.csproj", "{ACB8F984-7AC5-47F3-AE6C-1AEF173D2DEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary", "MyLibrary\MyLibrary.csproj", "{4871C019-5139-4787-BA66-7AE0C426C918}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{ACB8F984-7AC5-47F3-AE6C-1AEF173D2DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACB8F984-7AC5-47F3-AE6C-1AEF173D2DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACB8F984-7AC5-47F3-AE6C-1AEF173D2DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4871C019-5139-4787-BA66-7AE0C426C918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4871C019-5139-4787-BA66-7AE0C426C918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4871C019-5139-4787-BA66-7AE0C426C918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4871C019-5139-4787-BA66-7AE0C426C918}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4084266D-40BB-49A1-8E89-3865AC5189B8} = {A6A1D812-9A7B-4D14-A183-00A07B65DB3D}
 		{ACB8F984-7AC5-47F3-AE6C-1AEF173D2DEB} = {73B5C3BB-4004-4ABC-8CD3-A74009BF3418}
+		{4871C019-5139-4787-BA66-7AE0C426C918} = {73B5C3BB-4004-4ABC-8CD3-A74009BF3418}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {205B8807-B3BB-42C2-B37A-6337AA710837}

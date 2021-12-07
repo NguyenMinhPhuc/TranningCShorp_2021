@@ -12,6 +12,7 @@ namespace ProExample_ConsoleApplication
         public static void HienThi()
         {
             Console.WriteLine("Toi la Static");
+         
         }
     }
 }
